@@ -1,0 +1,318 @@
+// jz:避免同一个文件修改冲突
+// 斜线tabs
+.public-slash-box {
+    .ivu-tabs-bar {
+        border-bottom: none;
+        margin-bottom: 0px;
+    }
+    /deep/.ivu-tabs-ink-bar {
+        height: 0;
+    }
+    /deep/.ivu-tabs-nav .ivu-tabs-tab {
+        span {
+            &:nth-child(2) {
+                color: #515a6e;
+                display: inline-block;
+                font-size: 17px;
+                padding-left: 44px;
+            }
+        }
+    }
+    /deep/.ivu-tabs-nav .ivu-tabs-tab-active {
+        color: light-color;
+    }
+    /deep/.ivu-tabs-nav .ivu-tabs-tab:hover {
+        color: #333333;
+    }
+    /deep/.ivu-tabs-nav {
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+// 多选下拉选框样式
+.public-selects-box {
+    /deep/.ivu-select {
+        width: 100%;
+    }
+    /deep/.ivu-select-multiple .ivu-select-input {
+        position: absolute;
+        left: -247px;
+    }
+    /deep/.ivu-select-multiple .ivu-tag {
+        margin-right: 14px;
+    }
+    /deep/.ivu-select-selection {
+        padding: 0px;
+        padding-right: 4px;
+    }
+    /deep/.ivu-select-selection > div {
+        display: flex;
+        position: relative;
+        left: 100%;
+        height: 30px;
+        width: 800px;
+        padding-left: 20px;
+    }
+    /deep/.ivu-select-arrow {
+        right: 800px;
+    }
+}
+// 审核状态、启用状态
+.public-search-status {
+    display: flex;
+    p {
+        display: inline-block;
+        font-size: $font-size-large;
+        font-weight: bolder;
+        font-family: $base-font-family;
+    }
+    span {
+        padding: 5px 10px;
+        margin: 5px 10px;
+        cursor: pointer;
+        color: $main-font-color;
+        &:hover {
+            background-color: $filling-color;
+        }
+        &:active {
+            background-color: $filling-color;
+        }
+    }
+    .test {
+        background-color: $filling-color;
+    }
+}
+//统一的title提示
+.public-titjz {
+    height: 35px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(51, 51, 51, 1);
+    line-height: 35px;
+    padding: 0 40px;
+}
+//jz
+.publc-bottom20 {
+    margin-bottom: 20px;
+}
+.publc-bottom10 {
+    margin-bottom: 10px;
+}
+//jz 主题线
+.public-line {
+    height: 1px;
+    background: $light-color;
+    margin-bottom: 4px;
+}
+// 表单  封装成组件提出去
+.public-form-box {
+    width: 100%;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 2px 4px 0px rgba(51, 51, 51, 0.1);
+    padding: 20px;
+    .public-form-content {
+        background: #fff;
+        // padding: 0 20px 20px 20px;
+        /deep/.ivu-row {
+            margin-bottom: 16px;
+        }
+        /deep/.ivu-input,
+        .ivu-select,
+        .ivu-select-selection,
+        .ivu-input-group-append {
+            background: #fff !important;
+        }
+        /deep/.ivu-cascader-rel {
+            width: 150px !important;
+        }
+        .item-form-title {
+            height: 35px;
+            font-size: 16px;
+            font-weight: bold;
+            color: rgba(51, 51, 51, 1);
+            line-height: 35px;
+            padding-left: 26px;
+        }
+        .ivu-form-item {
+            margin: 0 !important;
+            /deep/.ivu-form-item-label {
+                background: #f5f6f8;
+                border: 1px solid #e6e6e6;
+                border-bottom: none;
+                vertical-align: middle;
+            }
+            /deep/.ivu-form-item-content {
+                padding-left: 4px;
+                padding-right: 4px;
+                border: 1px solid #e6e6e6;
+                border-bottom: none;
+                border-left: none;
+                background: #fff;
+                vertical-align: middle;
+            }
+            /deep/.ivu-select,
+            /deep/.ivu-input {
+                width: 146px;
+                background: rgba(249, 249, 249, 1);
+                border-radius: 4px;
+                .ivu-select-selection {
+                    background: rgba(249, 249, 249, 1);
+                }
+            }
+            /deep/.ivu-input-group {
+                width: 60%;
+            }
+            /deep/.ivu-input-group-append {
+                width: 70px;
+            }
+            /deep/.ivu-form-item-error-tip {
+                top: 6px;
+                left: 152px;
+                display: none;
+            }
+            // 给最后一行添加
+            &:last-child {
+                /deep/.ivu-form-item-label {
+                    border-bottom: 1px solid #e6e6e6;
+                }
+                /deep/.ivu-form-item-content {
+                    border-bottom: 1px solid #e6e6e6;
+                }
+            }
+        }
+        // 额外加的包裹层
+        .jz-meaningless {
+            /deep/.ivu-form-item-label {
+                color: #f5f6f8 !important;
+            }
+        }
+        .jz-input-group {
+            /deep/.ivu-form-item-error-tip {
+                left: 225px !important;
+            }
+        }
+    }
+}
+// 表格上面搜索的文字和输入框城市
+.public-search-input-jz {
+    span {
+        line-height: 32px;
+        display: inline-block;
+        // min-width: 100px;
+        text-align: left;
+        white-space: nowrap;
+        padding-right: 10px;
+    }
+    /deep/.ivu-col {
+        display: flex;
+    }
+}
+//普通
+.public-search-ipts-jz {
+    .ivu-input-type-text,
+    .ivu-select {
+        width: 60%;
+    }
+    .ivu-date-picker {
+        .ivu-input-type-text {
+            width: 100%;
+        }
+    }
+}
+// 分页盒子
+.public-btn-pagina {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+//头部的按钮/文字
+.public-header-text-btns {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    /deep/.ivu-btn {
+        margin-left: 20px;
+    }
+}
+//货物信息
+.public-flod-header {
+    width: 100%;
+    height: 40px;
+    padding: 0 20px;
+    background: #fff6e5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .btn {
+        border: 1px solid #ccc;
+        background: #fff;
+        height: 27px;
+        line-height: 27px;
+        padding: 4px 8px;
+        border-radius: 4px;
+        margin: 0 10px;
+        cursor: pointer;
+    }
+    .icon {
+        cursor: pointer;
+    }
+}
+//1px 线
+.public-line1jz {
+    width: 100%;
+    height: 1px;
+    margin: 20px 0;
+    background: #e8eaec;
+}
+/*主色调的线样式*/
+.public-component-linejz {
+    height: 2px;
+    background-color: $light-color;
+}
+//页面头部的样式
+.public-headejz {
+    padding: 0 46px;
+}
+// 列表查询的头部盒子样式
+.public-search-headjz {
+    background: rgba(255, 255, 255, 1);
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px 0px rgba(51, 51, 51, 0.1);
+    padding: 20px 46px;
+    .search-btn {
+        display: flex;
+        justify-content: center;
+    }
+}
+// 卡片表格 暂时写在这儿
+.public-table-cart-boxjz {
+    margin: 20px 46px;
+    .card-item:hover {
+        box-shadow: 0px 6px 14px 0px rgba(51, 51, 51, 0.1);
+    }
+}
+// 收缩展开按钮距离
+.flod-box {
+    .btns {
+        padding: 8px 11px !important;
+    }
+    .header {
+        padding: 0 11px !important;
+    }
+}
+// 暂时写在这儿
+.ae-form {
+    .public-form-content {
+        padding: 0px !important;
+    }
+}
+//xin
+.public-tasjz-box {
+    padding: 0px 46px;
+    height: 60px;
+    display: flex;
+    align-items: flex-end;
+    font-size: 16px;
+    font-weight: bold;
+}

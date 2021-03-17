@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/* 基础变量 */
+
+// 颜色
+// 主色
+$light-color: #02ADB5; // 项目主题亮色
+$dark-color: #303548; // 项目主题暗色
+// 辅助色
+$success-color: #34D377; // 成功
+$warning-color: #FF9C00; // 警告
+$error-color: #FF001B; // 失败
+$info-color: #5576B4; // 信息
+$success-prompt-color: #EAFBF1; // 成功提示
+$warning-prompt-color: #FFF6E5; // 警告提示
+$error-prompt-color: #FEE9E8; // 失败提示
+$info-prompt-color: #E8EFF5; // 信息提示
+
+// 中性色
+$main-font-color: #333333; // 主要文字颜色
+$conventional-font-color: #666666; // 常规文字颜色
+$secondary-font-color: #999999; // 次要文字颜色
+$placeholder-font-color: #C8C8C8; // 占位文字颜色
+$special-font-color: #4E596B; // 特殊文字颜色
+
+$border-color: #E5E5E5; // 描边颜色
+$filling-color: #F5F5F5; // 填充颜色
+$background-color: #F9F9F9; // 背景颜色
+
+
+// 字体
+$base-font-family: Microsoft Yahei;  // 基础字体
+$base-width: 1px; // 基础字体大小
+$important-title: 30px;  // 重要标题
+$important-title-height-line: 48px;  // 重要标题行高
+$base-height-line: 20px;  // 一般字体行高
+$font-size-base: 14px; // 一般字体大小（所有字体都可以使用基础字体大小，后续号统一修改所有字体的大小）
+$font-size-small: $font-size-base - 2px; // 偏小字体大小
+$font-size-large: $font-size-base + 2px; // 偏大字体大小

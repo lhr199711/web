@@ -1,0 +1,44 @@
+@charset "UTF-8";
+body {
+    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+    color: $main-font-color;
+    background-color: $background-color;
+    font-size: $font-size-base;
+    box-sizing: border-box;
+	word-break: break-all;
+}
+
+ul, li {
+    list-style: none;
+    overflow: hidden;
+}
+
+::-webkit-input-placeholder {
+    color: #ccc !important;
+}
+
+a {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    text-decoration: none;
+    color: $light-color;
+}
+
+a:focus,
+a:hover,
+a:active,
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+img {
+    /* 去除图片与底部的间隙 */
+    vertical-align: top;
+    display: inline-block;
+    border: none;
+    /* 去除图片在ie上出现的黑边 */
+}
+// .clearfix:after{visibility:hidden;display:block;font-size:0;content: " ";clear:both;height:0;}
+// .clearfix{*zoom:1;}

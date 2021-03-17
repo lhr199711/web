@@ -1,0 +1,258 @@
+.ivu-divider-horizontal {
+    margin: 10px 0;
+}
+.time-box {
+    display: flex;
+    justify-content: center;
+    background-color: #F9F9F9;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    .time-input {
+        width: 80px;
+        line-height: 60px;
+    }
+}
+// .agency-service {
+//     padding-left: 20px;
+// }
+.box-top {
+    display: flex;
+    .box-title {
+        font-size: $font-size-base;
+        font-weight: bold;
+        padding: 20px 0 10px 20px;
+        width: 92%;
+    }
+    // 确认方案按钮
+    .program-confirm {
+        width: 128px;
+        margin-top: 10px;
+    }
+}
+.title {
+    font-size: $font-size-base;
+    font-weight: bold;
+    padding: 20px 0 10px 20px;
+}
+/deep/ .scene-btns .small-btn .tabBtn {
+    &:first-child {
+        margin-left: 0;
+    }
+}
+/* 修改记录公共样式 */
+    .collapse {
+        background: #fff;
+        max-height: 500px;
+        border: 1px solid white;
+        overflow-y: auto;
+        overflow-x: hidden;
+        /deep/ .ivu-collapse-header {
+            height: 60px;
+            padding-left: 0;
+            background-color: #FFF6E5;
+            /deep/ i {
+                float: right;
+                line-height: 60px;
+            }
+        }
+        .collapse-head {
+            padding-top: 10px;
+            padding-left: 30px;
+            span {
+                font-size:20px;
+                font-family:Microsoft YaHei;
+                font-weight:400;
+            }
+            .collapse-btn {
+                position: absolute;
+                right: 35px;
+                top: 13px;
+            }
+            .icon {
+                width: 100px;
+                height: 17px;
+            }
+        }
+        .bask-tab {
+            margin-bottom: 10px;
+        }
+        /deep/.ivu-collapse-content {
+            background-color: $filling-color;
+        }
+    }
+    // 选择代理服务
+    .service {
+        padding-bottom: 20px;
+        border-bottom: 1px dashed $border-color;
+        .service-proxy {
+            // margin-top: 10px;
+            padding-left: 10px;
+            // 修改输入框的长度
+            .ivu-input-wrapper {
+                // width: 55%;
+                width: 120px;
+            }
+        }
+    }
+
+    // 汇率及方案
+    .program {
+        padding-top: 20px;
+        .program-settlement {
+            padding-left: 20px;
+            font-size: $font-size-base;
+            font-weight: bold;
+            .program-inherent {
+                display: inline-block;
+                padding-left: 20px;
+                // 修改输入框的长度
+                .ivu-input-wrapper {
+                    padding-left: 5px;
+                    width: 75%;
+                }
+            }
+        }
+    }
+// 选择服务商
+.service-provider {
+    padding: 4px 0;
+    .service-provider-title {
+        .service-provider-merchant  {
+            font-size: $font-size-large;
+            font-weight: bold;
+            color: $main-font-color;
+        }
+        .service-provider-group {
+            float: right;
+            font-weight: bold;
+            margin-right: 30px;
+            margin-top: 3px;
+            cursor: pointer;
+        }
+    }
+    .service-provider-company {
+        margin: 10px 30px 0 0;
+        padding: 20px 25px 20px 20px;
+        background-color: white;
+        min-height: 300px;
+        .ivu-checkbox-group-item {
+            width: 95%;
+            position: relative;
+            p {
+                padding: 5px 0 5px 10px;
+                cursor: pointer;
+                display: inline-block;
+            }
+            .service-select {
+                width: 90%;
+                .price {
+                    margin-left: 10px;
+                }
+                .time {
+                    margin-left: 20px;
+                }
+            }
+            &:hover {
+                background-color: $filling-color;
+            }
+        }
+        .service-select-click {
+            display: flex;
+            background-color: $filling-color;
+        }
+        .triangle {
+            position: absolute;
+            right: 38px;
+            margin-top: 18px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: $light-color transparent transparent transparent;
+            transform: rotate(270deg)
+        }
+    }
+}
+// 产品详情
+.product {
+    padding: 4px 0;
+    .product-top {
+        display: flex;
+        width: 100%;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid $border-color;
+        .product-title {
+            width: 90%;
+            font-size: $font-size-large;
+            font-weight: bold;
+            color: $main-font-color;
+            line-height: 30px;
+        }
+        .product-btn {
+            margin: 0 20px;
+        }
+    }
+    /deep/.tabTitle {
+        justify-content: flex-start;
+    }
+}
+.spacing {
+    margin: 10px 0;
+}
+// 协同协作
+.cooperation {
+    padding: 0 20px;
+    background-color: white;
+    .cooperation-notice {
+        padding: 10px 0;
+        border-bottom: 1px dashed  $border-color;
+        .cooperation-notice-people{
+            padding: 3px;
+            color: $main-font-color;
+            border: 1px solid $placeholder-font-color;
+            border-radius: 5px;
+        }
+        .cooperation-company {
+            padding: 10px 50px;
+        }
+    }
+    .cooperation-description {
+        padding: 10px 0;
+    }
+}
+// 场景展开全部
+.scene-btns {
+    display: flex;
+    justify-content: space-between;;
+    height: 38px;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed $border-color;
+    overflow: hidden;
+    &.spread {
+        height: auto;
+    }
+    /deep/ .small-btn .tabBtn {
+        margin: 0 12px 12px 12px;
+    }
+    & > .show-all-scene {
+        width: 200px;
+        text-align: right;
+        cursor: pointer;
+    }
+    .right-item {
+        display: flex;
+        justify-content: flex-end;
+        // align-items: center;
+        width: 200px;
+        .show-all-scene {
+            flex-shrink: 0;
+            margin-left: 32px;
+            line-height: 24px;
+            cursor: pointer;
+        }
+    }
+}
+.scene-tab {
+    display: flex;
+    justify-content: space-between;
+}

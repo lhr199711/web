@@ -1,0 +1,123 @@
+$green:#0FB0B8;
+.reg-wraper{
+    >.header {
+        margin: 40px 0 0 80px;
+        >h4 {
+            border-left: 1px solid #B4B4B4;
+            font-size: 30px;
+            line-height: 49px;
+            padding: 0 30px;
+            margin: 0 0 0 30px;
+        }
+    }
+    .reg-content {
+        width: 1578px;
+        margin: 0 auto;
+        padding: 60px 0 60px;
+        border-bottom: 1px dotted #999999;
+        .show-step {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            >div {
+                text-align: center;
+                p {
+                    font-size: 22px;
+                }
+            }
+            svg {
+                font-size: 100px;
+            }
+        }
+    }
+    .stepForm {
+        padding: 50px 0 0;
+    }
+    .step3Radio {
+        padding: 20px 0 0;
+        /deep/ .ivu-radio-group-item {
+            font-size: 20px;
+            margin: 0 80px;
+        }
+    }
+    .active {
+        color: $green;
+    }
+    .sure-btn {
+        width: 100%;
+        >div {
+            margin: 30px 0 0;
+            width: 392px;
+            height: 60px;
+            background-color: $green;
+            text-align: center;
+            line-height: 60px;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 24px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.drawer {
+    /deep/ .ivu-drawer-header {
+        padding: 0 120px;
+        border: none;
+        .ivu-drawer-header-inner {
+            font-size: 24px;
+            font-weight: bold;
+            color: #303548;
+            line-height: 144px;
+            height: 144px;
+        }
+    }
+    /deep/ .ivu-drawer-close {
+        transform: translate(-70px, 30px);
+    }
+    /deep/ .ivu-drawer-body {
+        padding: 0 120px;
+    }
+    .sumbitBtn {
+        width: 200px;
+        height: 60px;
+        background-color: #FF9C00;
+        border: 1px solid #E5E5E5;
+        box-shadow: 0px 3px 7px 0px rgba(35, 36, 44, 0.15);
+        border-radius: 30px;
+        text-align: center;
+        font-weight: bold;
+        line-height: 60px;
+    }
+    .upload-list{
+        display: inline-block;
+        width: 146px;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        overflow: hidden;
+        background: #fff;
+        position: relative;
+        box-shadow: 0 1px 1px rgba(0,0,0,.2);
+        margin-left: 10px;
+    }
+    .upload-list img{
+        width: 100%;
+        height: 100%;
+    }
+    .checkTitle {
+        label {
+            height: 40px;
+            background: #F4F4F4;
+            border-radius: 4px;
+            line-height: 40px;
+        }
+        /deep/ .ivu-checkbox {
+            display: none !important;
+        }
+    }
+}

@@ -1,0 +1,190 @@
+@import '~view-design/src/styles/index.less';
+
+// Color
+@primary-color          : #02ADB5;
+@info-color             : #2db7f5;
+@success-color          : #19be6b;
+@processing-color       : @primary-color;
+@warning-color          : #ff9c00;
+@error-color            : #ff001b;
+@normal-color           : #e6ebf1;
+@link-color             : #2D8cF0;
+@link-hover-color       : tint(@link-color, 20%);
+@link-active-color      : shade(@link-color, 5%);
+
+// Base
+@font-size-base         : 14px;
+@font-size-small        : @font-size-base - 2px;
+@font-size-large        : @font-size-base + 2px;
+
+// Border color
+@border-color-base      : #dcdee2;  // outside
+@border-color-split     : #e8eaec;  // inside
+
+// Background color
+@background-color-base        : #f9f9f9;  // base
+
+// Button
+@btn-height-base        : 32px;
+@btn-height-large       : 40px;
+@btn-height-small       : 24px;
+
+@btn-disable-color      : #999999;
+@btn-disable-bg         : @background-color-base;
+@btn-disable-border     : @border-color-base;
+
+@btn-default-color      : @text-color;
+@btn-default-bg         : #fff;
+@btn-default-border     : @border-color-base;
+
+@btn-primary-color      : #fff;
+@btn-primary-bg         : @primary-color;
+
+@btn-ghost-color        : @text-color;
+@btn-ghost-bg           : #fff;
+@btn-ghost-border       : @border-color-base;
+
+// Input
+@input-height-base           : 32px;
+@input-height-large          : 40px;
+@input-height-small          : 24px;
+
+// 表格行hover颜色
+@table-td-hover-color: #ebf7ff;
+
+body{
+    color: #333;
+    font-family: "PingFang SC","Microsoft YaHei","微软雅黑","Helvetica Neue",Helvetica,"Hiragino Sans GB",Arial,sans-serif;
+    background-color: #F1F2F5;
+}
+.ivu-layout {
+    background-color: #F1F2F5;
+}
+// 按钮样式修改
+.ivu-btn-primary:hover{
+    background-color: #5CA6A9;
+}
+.ivu-btn-primary:active, .ivu-btn-primary.active{
+    background-color: #0D8389;
+}
+
+// Switch样式修改
+.ivu-switch-large{
+    width: 72px;
+    height: 32px;
+}
+.ivu-switch:after{
+    width: 44px;
+    height: 30px;
+    top: 0px;
+}
+.ivu-switch-large.ivu-switch-checked:after{
+    left: 25px;
+    top: 0px;
+}
+.ivu-switch-checked .ivu-switch-inner {
+    left: 7px;
+    top: 5px;
+}
+.ivu-switch-inner{
+    left: 50px;
+    top: 5px;
+}
+
+// 下拉框样式修改
+.ivu-select-single .ivu-select-selection .ivu-select-selected-value{
+    // font-size: 12px;
+    padding-left: 10px;
+}
+.ivu-select-arrow{
+    right: 10px;
+}
+.ivu-select-single .ivu-select-prefix {
+    padding-left: 10px;
+}
+
+// 文框样式修改
+textarea.ivu-input{
+    min-height: 60px;
+    // padding: 16px 0 0 24px;
+}
+
+// 按钮样式修改
+.ivu-btn-circle{
+    border-color: #999999;
+}
+
+.ivu-btn {
+    min-width: 90px;
+}
+// iview表格样式统一调整
+// table表格头部样式
+.ivu-table-header thead tr th{
+    background-color: #E3ECEC;
+}
+.ivu-table th, .ivu-table td {
+    height: 40px;
+}
+.ivu-table-overflowX {
+    overflow: auto;
+}
+// 斑马线颜色
+.ivu-table-stripe .ivu-table-body tr:nth-child(2n) td, .ivu-table-stripe .ivu-table-fixed-body tr:nth-child(2n) td {
+    background-color: #fcfcfc;
+}
+.ivu-table-stripe .ivu-table-body tr.ivu-table-row-hover td, .ivu-table-stripe .ivu-table-fixed-body tr.ivu-table-row-hover td {
+    background-color: @table-td-hover-color;
+}
+th {
+    font-weight: normal;
+}
+tr {
+    border: none;
+}
+
+.ivu-tree-title-selected, .ivu-tree-title-selected:hover, .ivu-tree-title:hover {
+    background-color: #E3ECEC;
+}
+
+.btns-paginator {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 10px 0;
+}
+.ivu-form-item {
+    margin: 0 10px 20px 0;
+}
+// 全部右对齐
+.ivu-form-label-left .ivu-form-item-label, .ivu-form .ivu-form-item-label {
+    padding-right: 10px;
+    text-align: right;
+}
+.ivu-form-item-error-tip {
+    padding-top: 4px;
+}
+
+.ivu-btn-large {
+    width: 200px;
+    height: 60px;
+    border: none;
+    box-shadow: 0px 3px 7px 0px rgba(35, 36, 44, 0.15);
+    &:focus {
+        box-shadow: 0px 3px 7px 0px rgba(35, 36, 44, 0.15);
+    }
+    &.ivu-btn-primary {
+        color: #333;
+        font-weight: bold;
+        background-color: @warning-color;
+        &:hover {
+            background-color: @warning-color;
+        }
+    }
+    &.ivu-btn-default {
+        color: #333;
+        font-weight: bold;
+        background-color: #fff;
+        &:hover {
+            background-color: #fff;
+        }
+    }
+}

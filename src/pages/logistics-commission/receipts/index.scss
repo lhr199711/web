@@ -1,0 +1,182 @@
+.receipt-box {
+    /deep/ .ivu-input {
+        padding: 0;
+        height: 27px;
+        border: none;
+    }
+    /deep/ .ivu-input-wrapper {
+        top: -2px;
+    }
+    /deep/ .ivu-input:focus {
+        border-color: #fff;
+        box-shadow: 0 0 0 0 #f9f9f973;
+    }
+    font-size: 12px;
+    font-weight: bold;
+    width: 100%;
+    .dashed-line {
+        width: 100%;
+        padding-top: 10px;
+        border-bottom: 1px dashed #c8c8c8;
+    }
+    .name {
+        margin: 0 auto;
+        width: 110px;
+        text-align: center;
+        word-break: break-word;
+        padding: 10px 0;
+    }
+    .main-box {
+        .table-c {
+            flex: 1;
+            box-sizing: border-box;
+            height: 34px;
+            line-height: 34px;
+            text-align: center;
+            border-right: 1px solid #cccccc;
+        }
+        .row {
+            border: 1px solid #cccccc;
+            border-bottom: none;
+            height: 34px;
+            box-sizing: border-box;
+            width: 100%;
+            &:last-child {
+                border-bottom: 1px solid #cccccc;
+            }
+            .op-box {
+                box-sizing: border-box;
+                display: flex;
+            }
+            .l,
+            .r {
+                box-sizing: border-box;
+                height: 34px;
+                line-height: 34px;
+                display: inline-block;
+                border-right: 1px solid #cccccc;
+            }
+            .l {
+                width: 110px;
+                line-height: 16px;
+                word-break: break-word;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+            .r {
+                padding-left: 10px;
+                flex: 1;
+            }
+        }
+        .node {
+            background: #ebebeb;
+            height: 34px;
+            line-height: 34px;
+            text-align: center;
+        }
+        .img-box {
+            height: 110px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .shuo-ming {
+            height: 52px;
+            padding-top: 4px;
+            line-height: 18px;
+            text-align: center;
+        }
+        .he-bing3 {
+            height: 104px;
+            display: flex;
+            .left {
+                width: 110px;
+                line-height: 102px;
+                text-align: center;
+                border-right: 1px solid #cccccc;
+            }
+            .right {
+                flex: 1;
+                .op-box {
+                    border-bottom: 1px solid #cccccc;
+                }
+            }
+        }
+        .ping-fen {
+            display: flex;
+            .ping-fen-item {
+                flex: 1;
+                text-align: center;
+                border-right: 1px solid #cccccc;
+                line-height: 16px;
+                height: 34px;
+                &:nth-child(2n) {
+                    padding-top: 5px;
+                }
+            }
+            .ping-fen-item-text {
+            }
+        }
+        .ping-fen-huo-wu {
+            display: flex;
+            .ping-fen-item {
+                flex: 1;
+                text-align: center;
+                border-right: 1px solid #cccccc;
+                line-height: 16px;
+                height: 34px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .ping-fen-item-input {
+                flex: 1;
+                text-align: center;
+                border-right: 1px solid #cccccc;
+                line-height: 16px;
+                height: 34px;
+                padding-top: 5px;
+            }
+            .clo2 {
+                flex: 2;
+            }
+        }
+        .flex {
+            display: flex;
+            align-items: center;
+        }
+        .text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-right: 1px solid #cccccc;
+            line-height: 16px;
+            height: 34px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .input{
+            flex: 1;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // flex-grow:1;
+            padding-left: 10px;
+            border-right: 1px solid #cccccc;
+            /deep/ .ivu-input-wrapper {
+                top: 0px;
+            }
+        }
+        .w110{
+            width: 110px;
+        }
+        .flex1{
+            flex: 1;
+        }
+    }
+}

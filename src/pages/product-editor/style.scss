@@ -1,0 +1,451 @@
+.add-product {
+    /deep/ .ivu-select, /deep/ .ivu-input {
+        width: 160px;
+    }
+    /deep/ .ivu-input-wrapper {
+        width: auto;
+    }
+    .choose-type {
+        height: 32px;
+        line-height: 32px;
+        margin: 0 0 8px 40px;
+        font-size: $font-size-large;
+    }
+    .white-bg {
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0px 2px 4px 0px rgba(51,51,51,0.1);
+        &.add-product-content {
+            min-height: calc(100vh - 162px);
+        }
+        &.middle-white-bg {
+            padding: 10px 20px 20px 15px;
+            margin: 12px 0;
+            &.transport-white-bg {
+                margin-bottom: 0;
+                min-height: calc(100vh - 393px);
+            }
+            &.site-white-bg {
+                margin-bottom: 0;
+                min-height: calc(100vh - 297px);
+            }
+        }
+    }
+    .add-site, .choose-parameter {
+        h6 {
+            padding: 0 0 10px 20px;
+            font-size: $font-size-large;
+            font-weight: normal;
+        }
+        .container {
+            display: flex;
+            /deep/ .ivu-form {
+                width: 100%;
+                padding: 20px 0 0 20px;
+                background-color: $background-color;
+            }
+        }
+    }
+    .add-site {
+        .container {
+            display: flex;
+            /deep/ .ivu-form {
+                width: 100%;
+                padding: 20px 0 0 20px;
+                background-color: $background-color;
+            }
+            .btns {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 15%;
+                button + button {
+                    margin-top: 18px;
+                }
+            }
+        }
+        .arrow {
+            height: 30px;
+            margin: 0 10px 0 50px;
+            color: $light-color;
+            font-size: 80px;
+        }
+        &.add-site-detail {
+            .name {
+                line-height: 1.3;
+            }
+            .parameter {
+                margin-top: 20px;
+                padding-top: 20px;
+                border-top: 1px dashed #e5e5e5;
+            }
+            .display-line {
+                margin-top: 20px;
+            }
+        }
+        .name {
+            margin-left: 20px;
+            line-height: 32px;
+            font-size: $font-size-large;
+        }
+        .ivu-form-item + .ivu-form-item {
+            // margin-left: 50px;
+        }
+        .ivu-select + .ivu-select {
+            margin-left: 10px;
+        }
+        .display-line {
+            display: flex;
+            align-items: center;
+            height: 80px;
+            background-color: $background-color;
+            .name {
+                margin-left: 20px;
+                font-size: $font-size-large;
+            }
+            .line {
+                display: flex;
+                align-items: center;
+                font-size: 20px;
+                .arrow {
+                    margin: 0 16px;
+                    font-size: 80px;
+                    color: $light-color;
+                }
+            }
+        }
+        .gq {
+            padding-top: 20px;
+            border-top: 1px dashed $border-color;
+            .all-checkbox{
+                text-align: center;
+            }
+            &.gq-detail {
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 20px;
+                span {
+                    margin-right: 12px;
+                }
+
+            }
+        }
+    }
+    .choose-parameter {
+        h6 {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px dashed $border-color;
+        }
+        /deep/ .ivu-form-inline .ivu-form-item {
+            margin: 0 50px 20px 0;
+        }
+        .container {
+            /deep/ .ivu-form {
+                width: 88%;
+            }
+            .btns {
+                display: flex;
+                // flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 18%;
+                padding-left: 20px;
+                button + button {
+                    // margin-top: 18px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    .product-list {
+        padding: 10px 0 0 5px;
+        .collapse {
+            padding: 0;
+            width: 100%;
+            max-height: none;
+            /deep/ .ivu-checkbox-wrapper {
+                width: 25px;
+                margin-right: 0;
+            }
+            /deep/ .ivu-collapse {
+                display: flex;
+                flex-wrap: wrap;
+                .ivu-collapse-item {
+                    // width: calc(100% - 25px);
+                    width: 100%;
+                }
+            }
+        }
+        // .product-number {
+        //     font-size: $font-size-large;
+        // }
+        .line {
+            display: flex;
+            align-items: center;
+            .arrow {
+                height: 30px;
+                margin: 0 12px;
+                font-size: 70px;
+                color: $light-color;
+            }
+        }
+        .parameter {
+            color: $secondary-font-color;
+        }
+        .btns {
+            text-align: right;
+        }
+        .product-content {
+            // .scene-container {
+            //     display: flex;
+            //     justify-content: space-between;
+            //     margin-bottom: 10px;
+            //     padding-bottom: 10px;
+            //     border-bottom: 1px dashed $border-color;
+            //     .all-scene {
+            //         font-size: $font-size-small;
+            //         cursor: pointer;
+            //     }
+            // }
+            padding: 10px 0 20px 0;
+            &.only-one {
+                width: 100%;
+                padding: 20px;
+                background-color: #f7f7f7;
+            }
+            .scene-btns {
+                display: flex;
+                justify-content: space-between;;
+                height: 38px;
+                margin-bottom: 10px;
+                border-bottom: 1px dashed $border-color;
+                overflow: hidden;
+                &.spread {
+                    height: auto;
+                }
+                /deep/ .small-btn .tabBtn {
+                    margin: 0 12px 12px 12px;
+                }
+                & > .show-all-scene {
+                    width: 200px;
+                    text-align: right;
+                    cursor: pointer;
+                }
+                .right-item {
+                    display: flex;
+                    justify-content: flex-end;
+                    // align-items: center;
+                    width: 200px;
+                    .show-all-scene {
+                        flex-shrink: 0;
+                        margin-left: 32px;
+                        line-height: 24px;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .scene-tab {
+                display: flex;
+                justify-content: space-between;
+            }
+            .task-tab {
+                padding-bottom: 10px;
+                border-bottom: 1px solid $border-color;
+            }
+            .basic-item {
+                .item-container {
+                    margin-bottom: 10px;
+                    padding: 16px 0;
+                    border-bottom: 1px dashed $border-color;
+                    .item {
+                        display: flex;
+                        align-items: center;
+                        /deep/ .ivu-input, .ivu-select {
+                            margin-right: 8px;
+                        }
+                    }
+                }
+            }
+            .additional-item {
+                h6 {
+                    margin: 10px 0;
+                    font-size: $font-size-base;
+                    font-weight: normal;
+                }
+                .task-container {
+                    &.task-container-detail {
+                        display: flex;
+                        flex-wrap: wrap;
+                        .task-item {
+                            width: 50%;
+                            margin-right: 0;
+                        }
+                    }
+                    padding: 10px;
+                    background-color: #fff;
+                    .task-item {
+                        display: flex;
+                        align-items: center;
+                        margin: 0 10px 10px 0;
+                        text-align: left;
+                        .task-name {
+                            width: 140px;
+                            margin-left: 10px;
+                        }
+                        .time {
+                            margin-left: 50px;
+                        }
+                        /deep/ .ivu-select {
+                            margin-right: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .set-dead-line {
+        display: flex;
+        align-items: center;
+        i {
+            line-height: 32px;
+            margin-right: 8px;
+            font-size: 20px;
+            color: $warning-color;
+        }
+    }
+}
+.scene-checkbox /deep/ .ivu-checkbox-group-item {
+    width: 50%;
+    margin-right: 0;
+    text-align: center;
+}
+.gq-checkbox /deep/ .ivu-checkbox-group-item {
+    margin: 0 12px 12px 12px;
+}
+
+// 列表item样式
+.tab-content {
+    position: relative;
+    padding: 0 0 40px 10px;
+    .province {
+        height: 36px;
+        line-height: 36px;
+        // padding: 10px 0;
+        font-size: $font-size-small;
+        color: $conventional-font-color;
+    }
+    .site {
+        @include ellipsis();
+        max-width: 80%;
+        margin-left: 10px;
+        font-size: 20px;
+    }
+    .city-task {
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+        font-size: 20px;
+        .task {
+            @include ellipsis();
+            display: inline-block;
+            max-width: 80%;
+            color: $secondary-font-color;
+        }
+    }
+    .transport-info {
+        display: flex;
+        align-items: center;
+        margin: 10px 0 0 10px;
+        font-size: 20px;
+        font-size: 18px;
+        .city {
+            @include ellipsis();
+            max-width: 150px;
+        }
+        .way {
+            margin-left: 12px;;
+            color: $warning-color;
+            font-size: 24px;
+        }
+        .type {
+            color: $light-color;
+            font-size: 12px;
+            transform: scale(.8);
+        }
+        .arrow {
+            height: 30px;
+            margin-right: 12px;
+            color: $light-color;
+            font-size: 70px;
+        }
+    }
+    .account {
+        position: absolute;
+        top: 15px;
+        right: 18px;
+        span {
+            font-size: 20px;
+        }
+    }
+    .account-tag {
+        position: absolute;
+        top: -8px;
+        right: -7px;
+        color: $light-color;
+        font-size: 60px;
+    }
+}
+
+// 选择场景
+.choose-scene-container {
+    display: flex;
+    .scene-container {
+        width: 50%;
+        margin-right: 1.5%;
+        padding-right: 1.5%;
+        border-right: 1px solid $border-color;
+        .search-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            .search {
+                display: flex;
+                align-items: center;
+                /deep/ .ivu-input-wrapper {
+                    width: 160px;
+                }
+            }
+            .search-btn {
+                width: 24px;
+                line-height: 24px;
+                margin-left: 12px;
+                font-size: 18px;
+                color: #fff;
+                text-align: center;
+                background-color: $light-color;
+                border-radius: 100%;
+                cursor: pointer;
+            }
+        }
+        .required-tag {
+            position: absolute;
+            left: -10px;
+            z-index: 10;
+            height: 32px;
+            line-height: 32px;
+            font-size: 14px;
+            font-family: SimSun;
+            color: #ff001b;
+        }
+    }
+    .sort-container {
+        width: 47%;
+        .title {
+            margin-bottom: 10px;
+            line-height: 32px;
+        }
+    }
+}

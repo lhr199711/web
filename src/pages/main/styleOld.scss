@@ -1,0 +1,210 @@
+.layout {
+    /deep/ .ivu-layout-sider {
+        background-color: #303548;
+    }
+    .menu-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 230px !important;
+        min-width: 230px !important;
+        max-width: 230px !important;
+        flex: 0 0 230px !important;
+        padding-bottom: 30px;
+        & > ul {
+            margin-top: 16px;
+            width: 230px !important;
+        }
+        & /deep/ .ivu-menu {
+            color: #fff;
+            background-color: rgba($color: #000000, $alpha: 0);
+        }
+        /deep/ .ivu-menu-vertical.ivu-menu-light:after {
+            width: 0;
+        }
+        /deep/ .ivu-menu-light.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu) {
+            background: transparent;
+        }
+        /deep/ .ivu-menu-vertical .ivu-menu-item, /deep/ .ivu-menu-vertical .ivu-menu-submenu-title {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .ivu-menu-submenu /deep/ .ivu-menu .ivu-menu-submenu-title, .ivu-menu-submenu /deep/ .ivu-menu .ivu-menu-item {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .logo-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 120px;
+            margin: 0px 10px;
+            border-bottom: 1px dashed #fff;
+            box-sizing: border-box;
+            & > .logo {
+                img {
+                    width: 100%;
+                }
+            }
+            /deep/ .ivu-input {
+                margin-bottom: 30px;
+                font-size: 12px;
+            }
+        }
+        .menu-item {
+            @extend %scrollbar;
+            height: calc(100vh - 120px);
+            overflow-y: auto;
+            padding-top: 50px;
+            & > div {
+                margin-bottom: 20px;
+            }
+            .menu-name {
+                display: inline-block;
+                overflow: hidden;
+                width: 140px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                vertical-align: bottom;
+                transition: width 0.2s ease 0.2s;
+                .iconfont {
+                    margin-right: 12px;
+                    font-size: 18px;
+                }
+                .dot {
+                    display: inline-block;
+                    width: 4px;
+                    height: 4px;
+                    margin-right: 6px;
+                    background-color: #fff;
+                    border-radius: 100%;
+                }
+            }
+            i {
+                transform: translateX(0px);
+                transition: font-size 0.2s ease, transform 0.2s ease;
+                vertical-align: middle;
+                font-size: 16px;
+            }
+
+        }
+        .collapsed-menu {
+            span {
+                width: 0px;
+                transition: width 0.2s ease;
+            }
+            i {
+                transform: translateX(5px);
+                transition: font-size 0.2s ease 0.2s, transform 0.2s ease 0.2s;
+                vertical-align: middle;
+                font-size: 22px;
+            }
+        }
+    }
+    .right-container {
+        margin-left: 230px;
+        .header-wrapper {
+            position: fixed;
+            top: 0;
+            left: 230px;
+            z-index: 999;
+            height: 80px;
+            width: calc(100% - 230px);
+            padding: 0 16px;
+            background: #fff;
+            box-shadow: 0 2px 3px 2px rgba(0, 0, 0, .1);
+            .user-info {
+                display: flex;
+                align-items: center;
+                height:  80px;
+                position: absolute;
+                top: -4px;
+                right: 40px;
+                .user {
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    height: 100%;
+                    margin-right: 50px;
+                    cursor: pointer;
+                    .avator {
+                        width: 40px;
+                        height: 40px;
+                        background: rgb(224, 222, 222);
+                        vertical-align: middle;
+                        margin-right: 8px;
+                        border-radius: 50%;
+                        &.iconfont {
+                            color: #999;
+                            background-color: transparent;
+                            border-radius: 0;
+                        }
+                    }
+                    .user-name {
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+                    &:hover {
+                        .log-off {
+                            display: block;
+                        }
+                    }
+                    .log-off {
+                        display: none;
+                        position: absolute;
+                        top: 70px;
+                        width: 136px;
+                        height: 56px;
+                        line-height: 56px;
+                        text-align: center;
+                        background: url(~@/assets/log-off-bg.png) no-repeat;
+                        background-size: 100% 100%;
+                        span:hover {
+                            color: $light-color;
+                        }
+                    }
+                }
+                .role {
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                    .iconfont {
+                        font-size: 18px;
+                        margin-right: 8px;
+                    }
+                }
+            }
+
+        }
+        /deep/ .ivu-layout-content {
+            padding: 0 10px 16px 10px;
+            // margin-top: 86px;
+            margin-top: 106px;
+        }
+    }
+}
+/deep/ .ivu-menu-light.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu):after {
+    width: 4px;
+    // left: 0;
+}
+/deep/ .ivu-menu-light.ivu-menu-vertical .ivu-menu-item-active {
+    & > .menu-name .dot {
+        background-color: #02adb5 !important;
+    }
+}
+.third-menu-item-active {
+        color: #02adb5;
+        .dot {
+            background-color: #02adb5 !important;
+        }
+        &:after {
+            content: "";
+            display: block;
+            width: 4px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            background: #02adb5;
+        }
+}

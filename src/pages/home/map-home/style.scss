@@ -1,0 +1,313 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: url('~@/assets/images/show/bg.png') no-repeat center center;
+    background-size: cover;
+}
+.map-container {
+    position: relative;
+    // height: 90vh;
+    .map-mask {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background: no-repeat url('~@/assets/images/show/mask-line.png') center;
+        background-size: cover;
+        opacity: 0.8;
+        pointer-events: none;
+    }
+}
+.map-start {
+    position: fixed;
+    bottom: 10%;
+    right: 360px;
+    width: 180px;
+    height: 75px;
+    background: url('~@/assets/images/show/start.png') no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    // height: 161px;
+    height: 12vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background: url('~@/assets/images/show/top-bg.png') no-repeat;
+    background-size: 100% 100%;
+    img {
+        max-width: 40%;
+        height: 6vh;
+        margin-top: 1.8vh;
+        // margin-top: 35px;
+    }
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    img {
+        height: 100%;
+        width: 100%;
+        vertical-align: top;
+    }
+}
+.enterprise-resource {
+    position: absolute;
+    // top: 161px;
+    top: 10.5vh;
+    left: 0;
+    z-index: 2;
+    width: 330px;
+    // height: 828px;
+    height: 80vh;
+    padding-left: 28px;
+    background: url('~@/assets/images/show/resource-bg.png') no-repeat;
+    background-size: 100% 100%;
+    .enterprise-resource-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 275px;
+        height: 13%;
+        line-height: 100%;
+        margin-top: 6%;
+        text-align: center;
+        background: url('~@/assets/images/show/resource-title-bg.png') no-repeat;
+        background-size: 100% 100%;
+        cursor: pointer;
+        img {
+            margin-top: -20px;
+        }
+    }
+    .chart-container {
+        width: 275px;
+        // height: 218px;
+        height: 26%;
+        margin-top: 2%;
+        background: url('~@/assets/images/show/chart-bg.png') no-repeat;
+        background-size: 100% 100%;
+        .chart-title {
+            text-align: center;
+            color: #1bdaf7;
+            font-size: 12px;
+            // line-height: 1.8;
+        }
+        .chart {
+            height: 90%;
+        }
+    }
+}
+.order-info-section {
+    position: absolute;
+    top: 10.5vh;
+    left: 0;
+    z-index: 2;
+    width: 336px;
+    height: 80vh;
+    .total-info {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 285px;
+        height: 49px;
+        padding: 4px 0 0 20px;
+        font-size: 14px;
+        color: #00b7ee;
+        background: url('~@/assets/images/show/title-bg.png') no-repeat;
+        background-size: 100% 100%;
+        cursor: pointer;
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: calc(100% - 105px);
+        }
+
+        .nums {
+            display: flex;
+            justify-content: flex-start;
+            margin-right: 5px;
+
+            .num {
+                width: 26px;
+                height: 32px;
+                font-size: 22px;
+                text-align: center;
+                color: #1cddf9;
+                // background: rgba(51, 69, 122, .7);
+                background: url('~@/assets/images/show/num-bg.png') no-repeat;
+                background-size: 100% 100%;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .order-info {
+        width: 330px;
+        // height: 228px;
+        height: 99.5%;
+        padding: 5% 0 0 22px;
+        background: url('~@/assets/images/show/product-bg.png') no-repeat;
+        background-size: 100% 100%;
+        &:first-child {
+            margin-bottom: 1%;
+        }
+        .order-info-logo {
+            padding: 5px 10px 0px 10px;
+        }
+        .chart {
+            width: 285px;
+            height: 20vh;
+            // height: 72%;
+            margin-top: 9px;
+            background: url('~@/assets/images/show/order-chart-bg.png') no-repeat;
+            background-size: 100% 100%;
+            .chart-title {
+                position: absolute;
+                left: 85px;
+                height: 35px;
+                width: 150px;
+                padding-top: 7px;
+                color: #1BDAF7;
+                background: url('~@/assets/images/show/order-enterprise-type.png') no-repeat;
+                background-size: 100% 100%;
+                text-align: center;
+                cursor: pointer;
+                z-index: 3;
+            }
+        }
+    }
+}
+.platform-info {
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    // top: 161px;
+    top: 10.5vh;
+    width: 336px;
+    // height: 828px;
+    height: 80vh;
+    .total-info {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 285px;
+        height: 49px;
+        padding: 4px 0 0 20px;
+        font-size: 14px;
+        color: #00b7ee;
+        background: url('~@/assets/images/show/title-bg.png') no-repeat;
+        background-size: 100% 100%;
+        cursor: pointer;
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: calc(100% - 105px);
+        }
+        .nums {
+            display: flex;
+            justify-content: flex-start;
+            margin-right: 5px;
+            .num {
+                width: 26px;
+                height: 32px;
+                font-size: 22px;
+                text-align: center;
+                color: #1cddf9;
+                // background: rgba(51, 69, 122, .7);
+                background: url('~@/assets/images/show/num-bg.png') no-repeat;
+                background-size: 100% 100%;
+                border-radius: 10px;
+            }
+        }
+    }
+    .order-info {
+        width: 330px;
+        // height: 228px;
+        // height: 35%;
+        height: 33%;
+        padding: 5% 0 0 22px;
+        background: url('~@/assets/images/show/order-bg.png') no-repeat;
+        background-size: 100% 100%;
+        .chart {
+            width: 285px;
+            height: 65%;
+            margin-top: 5px;
+            background: url('~@/assets/images/show/order-chart-bg.png') no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+    .corridor-info {
+        width: 336px;
+        // height: 596px;
+        height: 66%;
+        margin-top: 1%;
+        padding: 6% 0 0 25px;
+        background: url('~@/assets/images/show/corridor-bg.png') no-repeat;
+        background-size: 100% 100%;
+        .box {
+            width: calc(100% - 85px);
+        }
+        .corridor-items {
+            width: 282px;
+            // height: 488px;
+            height: 82%;
+            margin-top: 3%;
+            padding: 10px 0 0 0;
+            background: url('~@/assets/images/show/corridor-black-bg.png') no-repeat;
+            background-size: 100% 100%;
+            .item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: calc(100% - 12px);
+                height: 10%;
+                color: #075a8a;
+                font-size: 13px;
+                margin: 0 auto 1% auto;
+                background: no-repeat url('~@/assets/images/show/wxz.png');
+                background-size: 100% 100%;
+                cursor: pointer;
+
+                &:hover {
+                    color: #28b1ff;
+                    background: no-repeat url('~@/assets/images/show/yxz.png');
+                    background-size: 100% 100%;
+                }
+            }
+            .active-item {
+                color: #28b1ff;
+                background: no-repeat url('~@/assets/images/show/yxz.png');
+                background-size: 100% 100%;
+            }
+            .go-to-corridor-list {
+                // height: 10%;
+                // margin-top: 2%;
+                // color: #fff;
+                // font-size: 14px;
+                text-align: center;
+                img {
+                    cursor: pointer;
+                    padding: 0 5px 5px 5px;
+                }
+            }
+        }
+    }
+}
